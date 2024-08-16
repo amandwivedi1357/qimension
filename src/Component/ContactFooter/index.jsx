@@ -62,7 +62,7 @@ const ContactFooter = () => {
     };
 
     return (
-        <div className="bg-[#14161F] pt-[70px] px-[50px] flex flex-col md:flex-row gap-2 mt-[50px]">
+        <div className="bg-[#14161F] pt-[70px] pb-[20px] px-[50px] flex flex-col md:flex-row gap-2 mt-[50px]">
             <div className="flex-1">
                 <div className="flex gap-2">
                     <img src="/Home/Ellipse.svg" alt="" />
@@ -101,7 +101,7 @@ const ContactFooter = () => {
                         <label htmlFor="message" className="block mt-4 text-sm font-medium text-white">Comments</label>
                         <textarea onChange={e => handleChange(e.target.value, { name: "message" })} value={formData.message} required name="message" id="message" rows="4" className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"></textarea>
                     </div>
-                    <div className="flex flex-col mt-4 font-poppins sm:items-end items-center justify-start w-[31%] md:w-full sm:mb-10">
+                    <div className="flex flex-col mt-4 font-poppins sm:items-end items-center justify-start  md:w-full sm:mb-10">
                         <button type="submit" className="hover:bg-white text-white hover:text-black rounded-md bg-[#8647F4] border-solid capitalize cursor-pointer font-medium h-11 leading-[normal] min-w-[155px] text-base text-center tracking-[0.16px] sm:mb-6">
                             get in touch
                         </button>

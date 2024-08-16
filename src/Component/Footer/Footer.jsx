@@ -12,7 +12,7 @@ const Footer = () => {
             </div>
             <div className="flex-1 mb-6 md:mb-0 md:mr-6">
                 <p className="w-full md:w-[60%] m-auto text-white text-[20px] font-poppins capitalize">
-                    Experience the Future of Creativity, Turn Your Imagination into Reality Through 3D Printing
+                    Experience the Future of Creativity, Turn Your Imagination into Reality Through Rapid Prototyping
                 </p>
                 <div className="mt-[50px] flex flex-col md:flex-row justify-center gap-10 md:gap-20">
                     <div className="mb-6 md:mb-0">
