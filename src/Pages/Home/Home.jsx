@@ -1,6 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
+import { Drawer, DrawerBody, DrawerOverlay, DrawerContent, DrawerCloseButton, useDisclosure } from '@chakra-ui/react';
 
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import './Home.css';
 import { useEffect, useState } from "react";
 import { printing_services } from ".";
@@ -8,6 +9,9 @@ import { Divider } from "@chakra-ui/react";
 import { Footer } from "../../Component";
 
 const Home = () => {
+  const navigate = useNavigate()
+  const { isOpen, onOpen, onClose } = useDisclosure();
+
   const [currentImage, setCurrentImage] = useState(0);
   const [hoveredIndex, setHoveredIndex] = useState(null);
   const images = [
@@ -85,18 +89,18 @@ const Home = () => {
                   Machines
                 </NavLink>
               </div>
-              <img src="/Home/Ham.svg" alt="" className="block md:hidden mt-[-82.5rem] ml-[18rem]" />
+              <img src="/Home/Ham.svg" alt="" onClick={onOpen} className="block md:hidden mt-[-82.5rem] ml-[18rem]" />
             </div>
           </div>
           <div className="w-full flex flex-col justify-center -mt-24 pb-10 md:pb-0 md:mt-20">
             <div className="md:w-[70%] w-[90%] mx-auto">
-              <p className="font-poppins text-white font-[600] text-[30px] md:text-[50px] leading-[40px] md:leading-[60px]">
+              <p className="font-poppins text-white font-[600] text-[20px] md:text-[50px] leading-[40px] md:leading-[60px]">
                 Prototype to Production Fast On-Demand Manufacturing
               </p>
               <p className="font-poppins text-[14px] md:text-[16px] text-white tracking-[0.32px] font-[400] capitalize">
                 Industrial-grade 3D Printers for every stage of the production cycle
               </p>
-              <button className="mt-[20px] md:mt-[31px] group hover:bg-[#fff] border h-[43px] border-white rounded-md w-[125px]">
+              <button onClick={()=>navigate("/contact-us")} className="mt-[20px] md:mt-[31px] group hover:bg-[#fff] border h-[43px] border-white rounded-md w-[125px]">
                 <p className="text-white group-hover:text-[#8647F4] font-poppins font-[400] text-[16px]">
                   Contact us
                 </p>
@@ -117,16 +121,16 @@ const Home = () => {
         ))}
       </div>
 
-      <div className="md:mt-[104px] mt-[15rem] mx-[20px] md:mx-[50px]">
-        <div className="flex gap-3 ">
+      <div className="md:mt-[104px] mt-[10rem] md:mb-0 mx-[20px] md:mx-[50px]">
+        <div className="flex gap-3 md:mb-3">
           <img src="/Home/Ellipse.svg" alt="" />
           <p className="text-[16px] font-poppins">Our Services</p>
         </div>
         <div className="flex flex-col md:flex-row justify-between">
-          <p className="md:w-[60%] font-poppins text-[#12151C] font-[600] text-[30px] md:text-[50px] leading-[40px] md:leading-[60px]">
+          <p className="md:w-[60%] w-full font-poppins text-[#12151C] font-[600] text-[20px] md:text-[50px] leading-[40px] md:leading-[60px]">
             INNOVATIVE 3D PRINTING SERVICES FOR EVERY NEED
           </p>
-          <button className="mt-[31px] hover:border hover:border-[#8647F4] group hover:bg-[#fff] bg-[#8647F4] border h-[43px] border-white rounded-md w-[125px]">
+          <button onClick={()=>navigate("/contact-us")} className="md:mt-[31px] mt-[20px] hover:border hover:border-[#8647F4] group hover:bg-[#fff] bg-[#8647F4] border h-[43px] border-white rounded-md w-[125px]">
             <p className="text-[#fff] group-hover:text-[#8647F4] font-poppins font-[400] text-[16px]">
               Contact us
             </p>
@@ -154,17 +158,17 @@ const Home = () => {
 
       <div className="my-[80px] mx-[20px] md:mx-[50px] flex flex-col md:flex-row gap-[6%] h-auto md:h-[40rem]">
         <div className="flex-1">
-          <div className="flex gap-[35px]">
-            <img src="/Home/home3.png" alt="home3" className="h-[300px] md:h-[500px]" />
-            <img src="/Home/home4.png" alt="home4" className="h-[300px] md:h-[500px] mt-[50px] md:mt-[135px]" />
+          <div className="md:flex gap-[35px]">
+            <img src="/Home/home3.png" alt="home3" className="w-full md:h-[500px]" />
+            <img src="/Home/home4.png" alt="home4" className="w-full md:h-[500px] mt-[50px] md:mt-[135px]" />
           </div>
         </div>
-        <div className="flex-1">
+        <div className="flex-1 md:mt-0 mt-5">
           <div className="flex gap-2">
             <img src="/Home/Ellipse.svg" alt="" />
             <p className="font-poppins">About us</p>
           </div>
-          <p className="text-[#141414] mt-[14px] mb-[32px] font-poppins text-[30px] md:text-[40px] font-semibold leading-[1.35] tracking-[1.44px] uppercase">
+          <p className="text-[#141414] mt-[14px] md:mb-[32px] mb-4 font-poppins text-[20px] md:text-[40px] font-semibold leading-[1.35] tracking-[1.44px] uppercase">
             TURNING IDEAS INTO OBJECTS
           </p>
           <p className="mb-[16px] text-[rgba(18, 21, 28, 0.70)] font-poppins text-[14px] md:text-[17px] font-normal leading-[1.61] tracking-[0.34px]">
@@ -174,7 +178,7 @@ const Home = () => {
             customization, and service while fostering a culture of continuous improvement and sustainability. <br /> <br />
             Our mission is to empower creativity and inspire breakthroughs in every industry we serve, while maintaining a steadfast commitment to excellence and customer satisfaction. Whether you're looking to prototype a new product, customize parts for manufacturing, or add intricate engravings to your designs, Qimension is here to turn your vision into reality.
           </p>
-          <button className="mt-[31px] hover:border hover:border-[#8647F4] group hover:bg-[#fff] bg-[#8647F4] border h-[43px] border-white rounded-md w-[125px]">
+          <button onClick={()=>navigate("/contact-us")} className="mt-[31px] hover:border hover:border-[#8647F4] group hover:bg-[#fff] bg-[#8647F4] border h-[43px] border-white rounded-md w-[125px]">
             <p className="text-[#fff] group-hover:text-[#8647F4] font-poppins font-[400] text-[16px]">
               Contact us
             </p>
@@ -186,7 +190,7 @@ const Home = () => {
         <div className="flex-1">
           <div className="flex gap-2">
             <img src="/Home/Ellipse.svg" alt="" />
-            <p className="font-poppins">About us</p>
+            <p className="font-poppins">How it works</p>
           </div>
           <p className="text-[#141414] mt-[14px] mb-[32px] font-poppins text-[30px] md:text-[40px] font-semibold leading-[1.35] tracking-[1.44px] uppercase">
             SIMPLE STEPS TO 3D PRINTING TECHNOLOGY
@@ -207,17 +211,48 @@ const Home = () => {
               </div>
             </div>
           ))}
-          <button className="mt-[11px] md:mb-0 mb-5 hover:border hover:border-[#8647F4] group hover:bg-[#fff] bg-[#8647F4] border h-[43px] border-white rounded-md w-[125px]">
+          {/* <button  className="mt-[11px] md:mb-0 mb-5 hover:border hover:border-[#8647F4] group hover:bg-[#fff] bg-[#8647F4] border h-[43px] border-white rounded-md w-[125px]">
             <p className="text-[#fff] group-hover:text-[#8647F4] font-poppins font-[400] text-[16px]">
               Know More
             </p>
-          </button>
+          </button> */}
         </div>
         <div className="h-auto w-full md:w-1/2">
           <img src="/Home/video_img.png" alt="home3" className="h-full w-full object-cover" />
         </div>
       </div>
       <Footer />
+      <Drawer isOpen={isOpen} placement="right" onClose={onClose}>
+        <DrawerOverlay />
+        <DrawerContent bg="#8748F4" color="white">
+          <DrawerCloseButton />
+          <DrawerBody display="flex" flexDirection="column" justifyContent="center" py={8}>
+            {/* Logo and Title at the top */}
+            <div className="flex gap-3 mb-8 items-center" onClick={() => { navigate('/'); onClose(); }}>
+              <img src="/Home/logo.svg" alt="" className="w-[40px]" />
+              <p className="font-poppins text-[white]">QIMENSION</p>
+            </div>
+            {/* Navigation Links */}
+            <div className="flex flex-col gap-6">
+              <NavLink to="/" className="text-white font-poppins" onClick={onClose}>
+                Home
+              </NavLink>
+              <NavLink to="/about-us" className="text-white font-poppins" onClick={onClose}>
+                About Us
+              </NavLink>
+              <NavLink to="/services" className="text-white font-poppins" onClick={onClose}>
+                Services
+              </NavLink>
+              <NavLink to="/contact-us" className="text-white font-poppins" onClick={onClose}>
+                Contact Us
+              </NavLink>
+              <NavLink to="/machines" className="text-white font-poppins" onClick={onClose}>
+                Machines
+              </NavLink>
+            </div>
+          </DrawerBody>
+        </DrawerContent>
+      </Drawer>
     </div>
   )
 }
