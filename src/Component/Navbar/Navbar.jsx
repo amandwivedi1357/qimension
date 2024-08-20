@@ -8,7 +8,7 @@ const Navbar = () => {
   return (
     <div className='w-full h-[155px] bg-[#8748F4] flex flex-row'>
       <div className='flex justify-center items-center md:w-[20%]  h-full  w-full'>
-        <div className="flex gap-3" onClick={() => navigate('/')}>
+        <div className="flex gap-3 cursor-pointer" onClick={() => navigate('/')}>
           <img src="/Home/logo.svg" alt="" className='w-[20px]'/>
           <p className="font-poppins text-[white]">
             QIMENSION
@@ -18,16 +18,16 @@ const Navbar = () => {
       <div className='flex  items-center justify-center w-[80%]'>
         <div className="flex justify-around w-[100%]">
           <div className="md:flex hidden ml-[12rem] gap-[32px]">
-            <NavLink to="/about-us" className="text-white font-poppins" activeClassName="border-b-2 border-white">
+            <NavLink to="/about-us" className="text-white font-poppins nav-link" activeClassName="border-b-2 border-white">
               About Us
             </NavLink>
-            <NavLink to="/services" className="text-white font-poppins" activeClassName="border-b-2 border-white">
+            <NavLink to="/services" className="text-white font-poppins nav-link" activeClassName="border-b-2 border-white">
               Services
             </NavLink>
-            <NavLink to="/contact-us" className="text-white font-poppins" activeClassName="border-b-2 border-white">
+            <NavLink to="/contact-us" className="text-white font-poppins nav-link" activeClassName="border-b-2 border-white">
               Contact Us
             </NavLink>
-            <NavLink to="/machines" className="text-white font-poppins" activeClassName="border-b-2 border-white">
+            <NavLink to="/machines" className="text-white font-poppins nav-link" activeClassName="border-b-2 border-white">
               Machines
             </NavLink>
           </div>

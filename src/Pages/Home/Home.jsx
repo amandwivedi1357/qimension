@@ -62,28 +62,28 @@ const Home = () => {
               <div className=" gap-[32px] hidden md:flex">
                 <NavLink
                   to="/about-us"
-                  className="text-white font-poppins"
+                  className="text-white font-poppins nav-link"
                   activeClassName="border-b-2 border-white"
                 >
                   About Us
                 </NavLink>
                 <NavLink
                   to="/services"
-                  className="text-white font-poppins"
+                  className="text-white font-poppins nav-link"
                   activeClassName="border-b-2 border-white"
                 >
                   Services
                 </NavLink>
                 <NavLink
                   to="/contact-us"
-                  className="text-white font-poppins"
+                  className="text-white font-poppins nav-link"
                   activeClassName="border-b-2 border-white"
                 >
                   Contact Us
                 </NavLink>
                 <NavLink
                   to="/machines"
-                  className="text-white font-poppins"
+                  className="text-white font-poppins nav-link"
                   activeClassName="border-b-2 border-white"
                 >
                   Machines
@@ -236,18 +236,18 @@ const Home = () => {
             {/* Navigation Links */}
             <div className="flex flex-col gap-6">
               <NavLink to="/" className="text-white font-poppins" onClick={onClose}>
-                Home
+ nav-link                Home
               </NavLink>
-              <NavLink to="/about-us" className="text-white font-poppins" onClick={onClose}>
+              <NavLink to="/about-us" className="text-white font-poppins nav-link" onClick={onClose}>
                 About Us
               </NavLink>
-              <NavLink to="/services" className="text-white font-poppins" onClick={onClose}>
+              <NavLink to="/services" className="text-white font-poppins nav-link" onClick={onClose}>
                 Services
               </NavLink>
-              <NavLink to="/contact-us" className="text-white font-poppins" onClick={onClose}>
+              <NavLink to="/contact-us" className="text-white font-poppins nav-link" onClick={onClose}>
                 Contact Us
               </NavLink>
-              <NavLink to="/machines" className="text-white font-poppins" onClick={onClose}>
+              <NavLink to="/machines" className="text-white font-poppins nav-link" onClick={onClose}>
                 Machines
               </NavLink>
             </div>
