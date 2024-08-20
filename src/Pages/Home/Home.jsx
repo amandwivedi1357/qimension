@@ -6,7 +6,7 @@ import './Home.css';
 import { useEffect, useState } from "react";
 import { printing_services } from ".";
 import { Divider } from "@chakra-ui/react";
-import { Footer } from "../../Component";
+import { Banner, Footer } from "../../Component";
 
 const Home = () => {
   const navigate = useNavigate()
@@ -186,7 +186,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="flex flex-col lg:flex-row gap-[6%] my-[80px] mx-[20px] md:mx-[50px]">
+      <div className="flex flex-col lg:flex-row gap-[6%] -my-8  md:my-[80px] mx-[20px] md:mx-[50px]">
         <div className="flex-1">
           <div className="flex gap-2">
             <img src="/Home/Ellipse.svg" alt="" />
@@ -221,6 +221,7 @@ const Home = () => {
           <img src="/Home/video_img.png" alt="home3" className="h-full w-full object-cover" />
         </div>
       </div>
+      <Banner/>
       <Footer />
       <Drawer isOpen={isOpen} placement="right" onClose={onClose}>
         <DrawerOverlay />

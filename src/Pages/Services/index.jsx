@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Footer, Navbar } from "../../Component"
+import { Banner, Footer, Navbar } from "../../Component"
 
 const Services = () => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
@@ -102,7 +102,7 @@ const Services = () => {
           </div>
         </div>
       </div>
-      <div className="mt-[50px] flex flex-col md:flex-row h-auto md:h-[29rem] relative">
+      {/* <div className="mt-[50px] flex flex-col md:flex-row h-auto md:h-[29rem] relative">
         <div className="w-full md:w-[60%] bg-[#111111] px-4 md:pl-[70px] py-8 md:pt-[80px] ">
           <p className="text-[30px] md:text-[40px] text-white capitalize font-semibold w-full md:w-[90%] tracking-[0.2rem]">
             TURNING DREAMS INTO
@@ -116,8 +116,9 @@ const Services = () => {
           </button>
         </div>
         <div className="w-full md:w-[40%] bg-[#8647F4]"></div>
-        <img src="/Home/cake.png" alt="" className="absolute top-20 right-20 w-[60%] md:w-[40%]" />
-      </div>
+        <img src="/Home/cake.png" alt="" className="absolute top-20 right-20 w-[60%] md:w-[40%] hidden md:block" />
+      </div> */}
+      <Banner/>
       <Footer />
     </div>
   )

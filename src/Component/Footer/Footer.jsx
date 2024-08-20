@@ -4,9 +4,9 @@ const Footer = () => {
     const navigate = useNavigate()
     return (
         <div className="bg-[#14161F] py-[120px] px-[50px] flex flex-col md:flex-row gap-2 mt-[50px]">
-            <div className="flex-2 flex gap-4 mb-6 md:mb-0 md:mr-6">
+            <div className="flex-2  items-center flex   md:gap-4 mb-6 md:mb-0 md:mr-6 ">
                 <img src="/Home/logo.svg" alt="" className="h-[50px] mx-auto"/>
-                <p className="font-poppins text-[24px] mx-auto text-[white]">
+                <p className="font-poppins text-[24px] mx-auto text-[white] md:ml-0 -ml-3">
                     QIMENSION
                 </p>
             </div>
@@ -48,7 +48,7 @@ const Footer = () => {
                 <p className="text-center text-white text-[24px] font-poppins capitalize">
                     Social Media
                 </p>
-                <img src="/services/insta.svg" alt="" className="h-[20px] mt-4"/>
+                <img src="/services/insta.svg" alt="" className="h-[20px] cursor-pointer mt-4" onClick={()=>window.open("https://www.instagram.com/qimension","_blank")}/>
             </div>
         </div>
     )
