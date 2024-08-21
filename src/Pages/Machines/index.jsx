@@ -38,14 +38,13 @@ const Machines = () => {
         {
             head: '4. Welding',
             list: [
-                <strong key={1}>BambuLab X1 Carbon</strong>,
+                
                 'Spot Welding ',
                 'ARC Welding ',
                 'MIG Welding',
                 'TIG Welding',
                 'Plasma Cutting  ',
-                <strong key={2}>Conventional Mill</strong>,
-                <strong key={3}>Conventional Lathe</strong>,
+               
             ]
         },
     ]

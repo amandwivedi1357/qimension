@@ -27,7 +27,7 @@ const Services = () => {
         <div className="flex flex-col md:flex-row justify-between items-start">
           <div className="flex-1 md:pr-8">
             <p className="font-poppins font-semibold text-[20px] md:text-[24px]">
-              1. Additive Manufacturing (3D Printing)
+               Additive Manufacturing (3D Printing)
             </p>
             <p className="font-poppins mt-2 text-[17px]">
               At Qimension, we employ cutting-edge additive manufacturing techniques, commonly
@@ -38,7 +38,7 @@ const Services = () => {
               detailed models for design validation, our additive manufacturing process enables quick
               turnaround times and unparalleled flexibility.
             </p>
-            <div className="mt-[30px] grid grid-cols-1 sm:grid-cols-2 gap-3">
+            {/* <div className="mt-[30px] grid grid-cols-1 sm:grid-cols-2 gap-3">
               {
                 printing_services.map((item, idx) => (
                   <div
@@ -53,7 +53,7 @@ const Services = () => {
                   </div>
                 ))
               }
-            </div>
+            </div> */}
           </div>
           <div className="flex-1 mt-8 md:mt-0">
             <img src="/services/3d printing.png" alt="" className="float-right h-auto md:h-[550px] w-full md:w-auto" />
@@ -70,7 +70,7 @@ const Services = () => {
             <p className="font-poppins mt-2 text-[17px]">
               Qimension specializes in subtractive manufacturing through Computer Numerical Control (CNC) machining. With our state-of-the-art CNC machines and expert machinists, we can produce high-precision components with tight tolerances and superior surface finishes. From milling and turning to drilling and grinding, our CNC machining process allows for the precise shaping and finishing of a wide range of materials, including metals, plastics, and composites. Whether you require prototypes, custom parts, or production runs, our CNC machining capabilities ensure quality, consistency, and reliability in every project.
             </p>
-            <div className="mt-[30px] grid grid-cols-1 sm:grid-cols-2 gap-3">
+            {/* <div className="mt-[30px] grid grid-cols-1 sm:grid-cols-2 gap-3">
               {
                 printing_services.map((item, idx) => (
                   <div
@@ -85,7 +85,7 @@ const Services = () => {
                   </div>
                 ))
               }
-            </div>
+            </div> */}
           </div>
         </div>
         <div className="flex flex-col md:flex-row justify-between items-start mt-[100px]">
