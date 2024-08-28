@@ -236,7 +236,7 @@ const Home = () => {
             {/* Navigation Links */}
             <div className="flex flex-col gap-6">
               <NavLink to="/" className="text-white font-poppins" onClick={onClose}>
- nav-link                Home
+                Home
               </NavLink>
               <NavLink to="/about-us" className="text-white font-poppins nav-link" onClick={onClose}>
                 About Us
