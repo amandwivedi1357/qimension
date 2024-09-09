@@ -47,7 +47,7 @@ const Home = () => {
 
   return (
     <div>
-      <div className="w-full flex h-screen relative flex-col md:flex-row">
+      <div className="w-full flex h-screen relative flex-col md:flex-row mb-[9rem] ">
         <div className="md:w-[25%] w-full bg-[#111]  md:h-auto">
           <div className="md:h-[8rem] md:p-0 p-10  h-[650px] cursor-pointer flex md:justify-center justify-start  md:items-center items-start gap-3">
             <img src="/Home/logo.svg" alt="" className="h-8 md:h-auto" />
@@ -56,7 +56,7 @@ const Home = () => {
             </p>
           </div>
         </div>
-        <div className="md:w-[75%] w-full bg-[#8647F4]">
+        <div className="md:w-[75%] w-full h-screen bg-[#8647F4]">
           <div className="h-[8rem] w-full flex justify-center items-center">
             <div className="flex justify-around w-full px-4 md:px-0">
               <div className=" gap-[32px] hidden md:flex">
@@ -92,12 +92,12 @@ const Home = () => {
               <img src="/Home/Ham.svg" alt="" onClick={onOpen} className="block md:hidden mt-[-82.5rem] ml-[18rem]" />
             </div>
           </div>
-          <div className="w-full flex flex-col justify-center -mt-24 pb-10 md:pb-0 md:mt-20">
-            <div className="md:w-[70%] w-[90%] mx-auto">
+          <div className="w-full flex flex-col justify-center  pb-10 md:pb-0 mt-[-20px] md:mt-20">
+            <div className="md:w-[70%] w-[90%] mx-auto mt-[-60px] md:mt-0">
               <p className="font-poppins text-white font-[600] text-[20px] md:text-[50px] leading-[40px] md:leading-[60px]">
                 Prototype to Production Fast On-Demand Manufacturing
               </p>
-              <p className="font-poppins text-[14px] md:text-[16px] text-white tracking-[0.32px] font-[400] capitalize">
+              <p className="font-poppins mt-4 text-[14px] md:text-[16px] text-white tracking-[0.32px] font-[400] capitalize">
                 Industrial-grade 3D Printers for every stage of the production cycle
               </p>
               <button onClick={()=>navigate("/contact-us")} className="mt-[20px] md:mt-[31px] group hover:bg-[#fff] border h-[43px] border-white rounded-md w-[125px]">
@@ -121,7 +121,7 @@ const Home = () => {
         ))}
       </div>
 
-      <div className="md:mt-[104px] mt-[10rem] md:mb-0 mx-[20px] md:mx-[50px]">
+      <div className="md:mt-[104px] mt-[13rem] md:mb-0 mx-[20px] md:mx-[50px]">
         <div className="flex gap-3 md:mb-3">
           <img src="/Home/Ellipse.svg" alt="" />
           <p className="text-[16px] font-poppins">Our Services</p>
@@ -160,7 +160,7 @@ const Home = () => {
         <div className="flex-1">
           <div className="md:flex gap-[35px]">
             <img src="/Home/home3.png" alt="home3" className="w-full md:h-[500px]" />
-            <img src="/Home/home4.png" alt="home4" className="w-full md:h-[500px] mt-[50px] md:mt-[135px]" />
+            <img src="/Home/home4.png" alt="home4" className="w-full md:h-[500px] mt-[50px] md:mt-[135px] hidden md:block" />
           </div>
         </div>
         <div className="flex-1 md:mt-0 mt-5">

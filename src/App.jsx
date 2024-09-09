@@ -7,12 +7,12 @@ import SmoothScroll from "./Routes/SmoothScroll"
 function App() {
   return (
     <div className="">
-      <SmoothScroll>
+      {/* <SmoothScroll> */}
        
       <ScrollToTop/>
       <AllRoutes/>
       
-      </SmoothScroll>
+      {/* </SmoothScroll> */}
     </div>
   )
 }

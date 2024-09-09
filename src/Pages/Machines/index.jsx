@@ -1,4 +1,5 @@
 import { Banner, Footer, Navbar } from "../../Component"
+import { SwipeCarousel } from "./MachineSlider"
 
 const Machines = () => {
     const list = [
@@ -71,11 +72,19 @@ const Machines = () => {
                         ))
                     }
                 </div>
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-16 my-[50px] mx-auto">
-                    <img src="/services/fourth.png" alt="" className="w-full" />
-                    <img src="/services/fourth.png" alt="" className="w-full" />
-                    <img src="/services/fourth.png" alt="" className="w-full" />
+                <div className="grid grid-cols-2  md:grid-cols-3 gap-4 md:gap-16 my-[50px] mx-auto">
+                    <img loading="lazy" src="/services/img1.webp" alt="" className="w-full border border-red-500" />
+                    <img loading="lazy" src="/services/img2.webp" alt="" className="w-full border border-red-500" />
+                    <img loading="lazy" src="/services/img3.webp" alt="" className="w-full border border-red-500" />
+                    <img loading="lazy" src="/services/img7.webp" alt="" className="w-full border border-red-500" />
+                    <img loading="lazy" src="/services/img5.webp" alt="" className="w-full border border-red-500" />
+                    <img loading="lazy" src="/services/img6.webp" alt="" className="w-full border border-red-500" />
+                    {/* <img src="/services/img7.jpg" alt="" className="w-full" /> */}
                 </div>
+                {/* <div className=" md:hidden block">
+
+                <SwipeCarousel/>
+                </div> */}
             </div>
             <Banner/>
             <Footer />

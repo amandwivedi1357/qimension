@@ -21,8 +21,8 @@ const Services = () => {
     <div>
       <Navbar />
       <div className="mx-4 md:mx-[50px]">
-        <div className="my-12">
-          <p className="text-center text-[30px] md:text-[40px] font-poppins font-semibold">CUTTING-EDGE MANUFACTURING SERVICES FOR EVERY NEED</p>
+        <div className="md:my-12 my-6">
+          <p className="md:text-center text-left text-[20px] md:text-[40px] font-poppins font-semibold">CUTTING-EDGE MANUFACTURING SERVICES FOR EVERY NEED</p>
         </div>
         <div className="flex flex-col md:flex-row justify-between items-start">
           <div className="flex-1 md:pr-8">
@@ -59,7 +59,7 @@ const Services = () => {
             <img src="/services/3d printing.png" alt="" className="float-right h-auto md:h-[550px] w-full md:w-auto" />
           </div>
         </div>
-        <div className="flex flex-col md:flex-row gap-5 mt-[80px]">
+        <div className="flex flex-col-reverse md:flex-row gap-5 md:mt-[80px] mt-[50px]">
           <div className="flex-1 mt-8 md:mt-0">
             <img src="/services/second.png" className="float-left h-auto md:h-[500px] w-full md:w-auto" alt="" />
           </div>
@@ -88,7 +88,7 @@ const Services = () => {
             </div> */}
           </div>
         </div>
-        <div className="flex flex-col md:flex-row justify-between items-start mt-[100px]">
+        <div className="flex flex-col md:flex-row justify-between items-start mt-[50px] md:mt-[100px]">
           <div className="flex-1 md:pr-8">
             <p className="font-poppins font-semibold text-[20px] md:text-[24px]">
               Rapid Prototyping

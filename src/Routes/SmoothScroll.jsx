@@ -1,5 +1,4 @@
-/* eslint-disable react/prop-types */
-import  { useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import Lenis from '@studio-freight/lenis';
@@ -7,39 +6,34 @@ import Lenis from '@studio-freight/lenis';
 gsap.registerPlugin(ScrollTrigger);
 
 const SmoothScroll = ({ children }) => {
+  const scrollRef = useRef(null);
+
   useEffect(() => {
     const lenis = new Lenis({
-      duration: 1.2,
+      duration: 1.2,  // Slightly faster than default (1.5)
       easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
       direction: 'vertical',
       gestureDirection: 'vertical',
       smooth: true,
-      mouseMultiplier: 1,
       smoothTouch: false,
       touchMultiplier: 2,
-      infinite: false,
     });
 
-    function raf(time) {
-      lenis.raf(time);
-      requestAnimationFrame(raf);
-    }
+    lenis.on('scroll', ScrollTrigger.update);
 
-    requestAnimationFrame(raf);
+    gsap.ticker.add((time) => {
+      lenis.raf(time * 1000);
+    });
 
-    const scrollFn = () => {
-      ScrollTrigger.update();
-    };
-
-    lenis.on('scroll', scrollFn);
+    gsap.ticker.lagSmoothing(0);
 
     return () => {
-      lenis.off('scroll', scrollFn);
       lenis.destroy();
+      gsap.ticker.remove(lenis.raf);
     };
   }, []);
 
-  return <>{children}</>;
+  return <div ref={scrollRef}>{children}</div>;
 };
 
 export default SmoothScroll;

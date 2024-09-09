@@ -41,10 +41,10 @@ import { Banner, Footer, Navbar } from "../../Component"
            
   <div className="sm:flex block  gap-[35px] mt-[60px]">
     <img src="/Home/home3.png" alt="home3" className="h-[500px] w-full" />
-    <img src="/Home/home4.png" alt="home4" className="h-[500px] sm:mt-[80px] mt-[20px] w-full" />
+    <img src="/Home/home4.png" alt="home4" className="h-[500px] hidden md:block sm:mt-[80px] mt-[20px] w-full" />
   </div>
 
-            <div className="flex-1">
+            <div className="flex-1 mt-[-50px] md:mt-0">
               <div className=" flex gap-2">
                 <img src="/Home/Ellipse.svg" alt="" />
                 <p className="font-poppins">Our Vision & Mission</p>
@@ -69,9 +69,9 @@ Our vision at Qimension is to be a global leader in additive and subtractive man
 
         </div>
       </div>
-      <div className="my-[20px] sm:my-[80px] sm:mx-[50px] mx-[22px] flex sm:flex-row flex-col-reverse gap-[6%] ">
-      <div className="flex-1 sm:mt-0 mt-5">
-              <div className=" flex gap-2">
+      <div className="my-[20px] sm:my-[80px] sm:mx-[50px] mx-[22px] flex sm:flex-row flex-col gap-[6%] ">
+      <div className="flex-1">
+              <div className=" flex gap-2 mt-[-50px] md:mt-0">
                 <img src="/Home/Ellipse.svg" alt="" />
                 <p className="font-poppins">Why choose us</p>
               </div>
@@ -85,7 +85,7 @@ Our vision at Qimension is to be a global leader in additive and subtractive man
                   
               <div className="flex sm:gap-10 gap-3">
 
-              <p className="text-[#8647F4] text-[3rem] font-semibold">
+              <p className="text-[#8647F4] mt-[-10px] md:mt-0 text-[3rem] font-semibold">
                 0{data.id}
               </p>
               <div className=" flex flex-col gap-3">
