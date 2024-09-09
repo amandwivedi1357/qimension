@@ -52,8 +52,8 @@ const Machines = () => {
         <div>
             <Navbar />
             <div className="mx-4 md:mx-[50px]">
-                <div className="my-12 w-full md:w-[50%] mx-auto">
-                    <p className="text-center text-[30px] md:text-[40px] font-poppins font-semibold">YOUR SOURCE FOR MANUFACTURING EXPERTISE</p>
+                <div className="md:my-12 my-3  w-full md:w-[50%] mx-auto">
+                    <p className="md:text-center text-left text-[25px]  md:text-[40px] font-poppins font-semibold ">YOUR SOURCE FOR MANUFACTURING EXPERTISE</p>
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8">
                     {

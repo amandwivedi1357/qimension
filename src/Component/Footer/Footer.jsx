@@ -6,7 +6,7 @@ const Footer = () => {
         <div className="bg-[#14161F] pb-6">
 
         
-        <div className=" pt-[50px] pb-[60px] px-[50px] flex flex-col md:flex-row gap-2 mt-[50px]">
+        <div className=" pt-[50px] pb-[60px] px-[50px] flex flex-col md:flex-row gap-2 md:mt-[50px] mt-[15px]">
             <div className="flex-2  items-center flex   md:gap-4 mb-6 md:mb-0 md:mr-6 ">
                 <img src="/Home/logo.svg" alt="" className="h-[50px] mx-auto"/>
                 <p className="font-poppins text-[24px] mx-auto text-[white] md:ml-0 -ml-3">

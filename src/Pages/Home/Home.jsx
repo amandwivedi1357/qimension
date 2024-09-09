@@ -47,7 +47,7 @@ const Home = () => {
 
   return (
     <div>
-      <div className="w-full flex h-screen relative flex-col md:flex-row mb-[9rem] ">
+      <div className="w-full flex h-screen relative flex-col md:flex-row mb-[9rem] md:mb-0 ">
         <div className="md:w-[25%] w-full bg-[#111]  md:h-auto">
           <div className="md:h-[8rem] md:p-0 p-10  h-[650px] cursor-pointer flex md:justify-center justify-start  md:items-center items-start gap-3">
             <img src="/Home/logo.svg" alt="" className="h-8 md:h-auto" />
@@ -121,7 +121,7 @@ const Home = () => {
         ))}
       </div>
 
-      <div className="md:mt-[104px] mt-[13rem] md:mb-0 mx-[20px] md:mx-[50px]">
+      <div className="md:mt-[50px] mt-[11rem] md:mb-0 mx-[20px] md:mx-[50px]">
         <div className="flex gap-3 md:mb-3">
           <img src="/Home/Ellipse.svg" alt="" />
           <p className="text-[16px] font-poppins">Our Services</p>
@@ -136,7 +136,7 @@ const Home = () => {
             </p>
           </button>
         </div>
-        <div className="mt-[50px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3">
+        <div className="md:mt-[50px] mt-3 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3">
           {printing_services.map((item, idx) => (
             <div
               key={idx}
@@ -156,7 +156,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="my-[80px] mx-[20px] md:mx-[50px] flex flex-col md:flex-row gap-[6%] h-auto md:h-[40rem]">
+      <div className="md:my-[80px] my-[20px] mx-[20px] md:mx-[50px] flex flex-col md:flex-row gap-[6%] h-auto md:h-[40rem]">
         <div className="flex-1">
           <div className="md:flex gap-[35px]">
             <img src="/Home/home3.png" alt="home3" className="w-full md:h-[500px]" />
@@ -186,7 +186,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="flex flex-col lg:flex-row gap-[6%] -my-8  md:my-[80px] mx-[20px] md:mx-[50px]">
+      <div className="flex flex-col lg:flex-row gap-[6%] md:my-[80px] mx-[20px] md:mx-[50px]">
         <div className="flex-1">
           <div className="flex gap-2">
             <img src="/Home/Ellipse.svg" alt="" />
@@ -217,7 +217,7 @@ const Home = () => {
             </p>
           </button> */}
         </div>
-        <div className="h-auto w-full md:w-1/2 mb-16 md:mb-0">
+        <div className="h-auto w-full md:w-1/2 mb-1 md:mb-0">
           <img src="/Home/video_img.png" alt="home3" className="h-full w-full object-cover" />
         </div>
       </div>
