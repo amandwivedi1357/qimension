@@ -1,5 +1,4 @@
 import { Banner, Footer, Navbar } from "../../Component"
-import { SwipeCarousel } from "./MachineSlider"
 
 const Machines = () => {
     const list = [
@@ -72,20 +71,33 @@ const Machines = () => {
                         ))
                     }
                 </div>
-                <div className="grid grid-cols-2  md:grid-cols-3 gap-4 md:gap-16 my-[50px] mx-auto">
-                    <img loading="lazy" src="/services/img1.webp" alt="" className="w-full border border-red-500" />
-                    <img loading="lazy" src="/services/img2.webp" alt="" className="w-full border border-red-500" />
-                    <img loading="lazy" src="/services/img3.webp" alt="" className="w-full border border-red-500" />
-                    <img loading="lazy" src="/services/img7.webp" alt="" className="w-full border border-red-500" />
-                    <img loading="lazy" src="/services/img5.webp" alt="" className="w-full border border-red-500" />
-                    <img loading="lazy" src="/services/img6.webp" alt="" className="w-full border border-red-500" />
-                    {/* <img src="/services/img7.jpg" alt="" className="w-full" /> */}
-                </div>
+                
                 {/* <div className=" md:hidden block">
 
                 <SwipeCarousel/>
                 </div> */}
             </div>
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-1 my-[50px] mx-auto">
+    <div className="flex justify-center">
+        <img loading="lazy" src="/services/img1.webp" alt="Service Image 1" className="w-[50%] border border-red-500" />
+    </div>
+    <div className="flex justify-center">
+        <img loading="lazy" src="/services/img2.webp" alt="Service Image 2" className="w-[50%] border border-red-500" />
+    </div>
+    <div className="flex justify-center">
+        <img loading="lazy" src="/services/img3.webp" alt="Service Image 3" className="w-[50%] border border-red-500" />
+    </div>
+    <div className="flex justify-center">
+        <img loading="lazy" src="/services/img7.webp" alt="Service Image 4" className="w-[50%] border border-red-500" />
+    </div>
+    <div className="flex justify-center">
+        <img loading="lazy" src="/services/img5.webp" alt="Service Image 5" className="w-[50%] border border-red-500" />
+    </div>
+    <div className="flex justify-center">
+        <img loading="lazy" src="/services/img6.webp" alt="Service Image 6" className="w-[50%] border border-red-500" />
+    </div>
+</div>
+
             <Banner/>
             <Footer />
         </div>

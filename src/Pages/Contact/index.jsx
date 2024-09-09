@@ -19,7 +19,8 @@ const Contactus = () => {
             img:'/Home/loc.svg',
             hover:'',
             title:'Office Location',
-            desc:'Open Maps'
+            desc:'Open Maps',
+            link:"https://www.google.com/maps/search/Kshetra+A-42,+2nd+Floor,+Road+No.+6,+Film+Nagar,+Jubilee+Hills,+Hyderabad,+Telangana-500033/@17.4129816,78.4125387,17z/data=!3m1!4b1?authuser=0&entry=ttu&g_ep=EgoyMDI0MDkwNC4wIKXMDSoASAFQAw%3D%3D"
         }
     ]
     return (
@@ -36,7 +37,12 @@ const Contactus = () => {
                     <div className="w-full md:w-[80%] flex flex-col md:flex-row justify-center items-center gap-8">
                         {
                             contactdata.map((data, idx) => (
-                                <div className="h-[10rem] w-full md:w-[15rem] flex flex-col items-center" key={idx}>
+                                <div onClick={() => {
+                                    // Only open link if it exists
+                                    if (data.link) {
+                                        window.open(data.link, "_blank");
+                                    }
+                                }} className="h-[10rem] w-full md:w-[15rem] flex flex-col items-center" key={idx}>
                                     <img src={data.img} alt="" className="h-[40px] w-[40px]"/>
                                     <p className="text-[20px] mt-5 font-semibold text-center">{data.title}</p>
                                     <p className="text-center">{data.desc}</p>

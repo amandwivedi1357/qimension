@@ -217,7 +217,7 @@ const Home = () => {
             </p>
           </button> */}
         </div>
-        <div className="h-auto w-full md:w-1/2">
+        <div className="h-auto w-full md:w-1/2 mb-16 md:mb-0">
           <img src="/Home/video_img.png" alt="home3" className="h-full w-full object-cover" />
         </div>
       </div>

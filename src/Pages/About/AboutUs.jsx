@@ -39,7 +39,7 @@ import { Banner, Footer, Navbar } from "../../Component"
         </div>
         <div className="my-[80px] flex sm:flex-row flex-col-reverse gap-[6%] ">
            
-  <div className="sm:flex block  gap-[35px] mt-[60px]">
+  <div className="sm:flex block  gap-[35px] md:mt-[60px] mt-0">
     <img src="/Home/home3.png" alt="home3" className="h-[500px] w-full" />
     <img src="/Home/home4.png" alt="home4" className="h-[500px] hidden md:block sm:mt-[80px] mt-[20px] w-full" />
   </div>
@@ -109,7 +109,7 @@ Our vision at Qimension is to be a global leader in additive and subtractive man
             </div>
             <div className="">
               
-  <div className=''>
+  <div className='md:mb-0 mb-6'>
     <img src="/Home/video_img.png" alt="home3" className="h-full" />
     
   </div>
